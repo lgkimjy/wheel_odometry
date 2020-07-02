@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="wheel_odometry" type="odometry_publisher" name="odometry_publisher" output="screen" />
+
+  <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find wheel_odometry)/rviz_cfg/odom.rviz" />
+
+</launch>
